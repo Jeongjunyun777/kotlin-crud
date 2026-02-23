@@ -3,12 +3,10 @@ spring:
     name: crud-kotlin
   datasource:
     url: jdbc:mysql://localhost:3306/kotlin-curd
-    hikari:
-      username: ${DB_USERNAME}
-      password: ${DB_PASSWORD}
-      driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-
